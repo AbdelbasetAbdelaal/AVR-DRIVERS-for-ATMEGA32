@@ -1,0 +1,15 @@
+21:08:21 **** Build of configuration Debug for project ferst_ program ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: ferst_ program.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ferst_ program.map -mmcu=atmega32 -o "ferst_ program.elf"  ./main.o   
+avr-gcc.exe: program.map: No such file or directory
+make: *** [ferst_ program.elf] Error 1
+
+21:08:24 Build Finished (took 2s.438ms)
+

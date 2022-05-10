@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: May 10, 2022
+ *      Author: Elhawey
+ */
+
+#include <avr/io.h>
+#include <uteltis.h>
+int main ()
+{
+    /*set pin direction*/
+	DDRA = 0b00000001;
+
+	/*set pin value*/
+	PORTA = 0b00000001;
+    delay_ms(500);
+    PORTA = 0b00000000;
+	return 0;
+}

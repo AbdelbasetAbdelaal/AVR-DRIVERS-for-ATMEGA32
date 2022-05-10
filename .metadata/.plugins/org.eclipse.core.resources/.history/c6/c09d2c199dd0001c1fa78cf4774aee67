@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: May 10, 2022
+ *      Author: Elhawey
+ */
+
+#include <avr/io.h>
+#include <util/delay.h>
+int main ()
+{
+    /*set pin direction*/
+	DDRA = 0b00000001;
+
+    while (1)
+    {
+    	PORTA = 0b00000001;
+    	 _delay_ms(1000);
+        PORTA = 0b00000000;
+    }
+	return 0;
+}
